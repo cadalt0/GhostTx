@@ -26,7 +26,7 @@ export default function FullWarningPage() {
             </h1>
 
             <h2 className="select-none font-black text-white text-[20px] sm:text-[28px] md:text-[36px] lg:text-[48px]">
-              ALL SCAM ON pumpful — THIS PROJECT IS ABANDONED
+              ALL SCAM ON pump.fun — THIS PROJECT IS ABANDONED
             </h2>
 
             <p className="text-sm sm:text-base md:text-lg text-zinc-300 max-w-3xl">
@@ -41,7 +41,7 @@ export default function FullWarningPage() {
                 onClick={(e) => {
                   e.preventDefault();
                   // simple copy-to-clipboard of a ready-to-share warning text
-                  const text = `WE DON'T HAVE ANY TOKENS — ALL SCAM ON pumpful. PROJECT ABANDONED. DO NOT SEND FUNDS.`;
+                  const text = `WE DON'T HAVE ANY TOKENS — ALL SCAM ON pump.fun. PROJECT ABANDONED. DO NOT SEND FUNDS.`;
                   try {
                     navigator.clipboard.writeText(text);
                     alert("Warning copied to clipboard. Paste anywhere to warn others.");
@@ -51,20 +51,18 @@ export default function FullWarningPage() {
                 }}
                 className="inline-block rounded-lg px-6 py-3 bg-red-600 hover:bg-red-700 font-bold shadow"
               >
-                Copy warning text
               </a>
 
               <a
-                href="https://pumpful"
+                href="https://pump.fun"
                 onClick={(e) => {
                   // confirm before opening the possibly malicious site
-                  if (!confirm("You are about to open pumpful. Proceed?")) e.preventDefault();
+                  if (!confirm("You are about to open pump.fun. Proceed?")) e.preventDefault();
                 }}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block rounded-lg px-6 py-3 border border-zinc-700 text-zinc-100 hover:bg-zinc-900"
               >
-                Open pumpful (careful)
               </a>
             </div>
 
